@@ -1,0 +1,1 @@
+#Hashmaps are like dictionary in python
