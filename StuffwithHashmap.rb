@@ -63,4 +63,4 @@ end
 # default values using ||= with the nil result
 city = cities['TX']
 city ||= 'Does Not Exist'
-puts "The city for the state 'TX' is: #{city}"
+# puts "The city for the state 'TX' is: #{city}"
