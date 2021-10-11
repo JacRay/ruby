@@ -26,11 +26,13 @@ class student{
         for(int i = 0;i<n;i++){
             reg[i+1] = email[i];
         }
-        for(int i=1;i<4;i++){
-            reg[n+i] = static_cast<char>(r%10);
-            r = r/10;
+        std::string tmp = std::to_string(r);
+        char const *num = tmp.c_str();
+        int i;
+        for( i=0;num[i]!='\0';i++){
+            reg[n+i+1] = num[i];
         }
-        reg[n+4] = '\0';
+        reg[n+i+1] = '\0';
 
     }
     int check(char * s){
