@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 class schoolstaff{
     char id[20];
     char name[20];
@@ -8,7 +9,7 @@ class schoolstaff{
     float nohr;
     float rate;
     char grade;
-    float salary
+    float salary;
     public:
     void Input(){
         cin>>id>>name>>mark1>>mark2>>mark3>>nohr>>rate;
@@ -28,8 +29,17 @@ class schoolstaff{
         salary = nohr * rate;
     }
 
-}
-using namespace std;
+};
 int main(){
+    schoolstaff s[100];
+    int n,i;
+    cin>>n;
+    for(i =0;i<n;i++){
+        s[i].Input();
+        s[i].calca();
+    }
+    for(i =0;i<n;i++){
+        s[i].Output();
+    }
 
 }
